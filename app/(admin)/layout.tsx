@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
 
 function AdminLayout({
   children,
@@ -11,6 +12,7 @@ function AdminLayout({
       <Header />
       <div className="flex flex-col lg:flex-row bg-gray-100">
         {/* Sidebar */}
+        <Sidebar />
         <div
           className="flex-1 flex justify-center lg:justify-start
         items-start max-w-5xl mx-auto w-full"

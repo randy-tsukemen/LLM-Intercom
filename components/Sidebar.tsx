@@ -1,4 +1,4 @@
-import { BotMessageSquare } from "lucide-react";
+import { BotMessageSquare, PencilLine, SearchIcon } from "lucide-react";
 import Link from "next/link";
 
 function Sidebar() {
@@ -24,7 +24,11 @@ function Sidebar() {
             className="hover:opacity-50 flex flex-col text-center
           lg:text-left lg:flex-row items-center gap-2 p-5 rounded-md bg-[#2991EE]"
           >
-            Link
+            <PencilLine className="w-6 h-6 lg:h-8 lg:w-8" />
+            <div className="hidden md:inline">
+              <p className="text-xl">Edit</p>
+              <p className="text-sm font-extralight">Chatbot</p>
+            </div>
           </Link>
         </li>
         <li className="flex-1">
@@ -33,7 +37,11 @@ function Sidebar() {
             className="hover:opacity-50 flex flex-col text-center
           lg:text-left lg:flex-row items-center gap-2 p-5 rounded-md bg-[#2991EE]"
           >
-            Link
+            <SearchIcon className="w-6 h-6 lg:h-8 lg:w-8" />
+            <div className="hidden md:inline">
+              <p className="text-xl">View</p>
+              <p className="text-sm font-extralight">Session</p>
+            </div>
           </Link>
         </li>
       </ul>
